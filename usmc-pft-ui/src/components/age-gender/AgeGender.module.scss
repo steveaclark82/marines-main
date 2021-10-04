@@ -1,0 +1,43 @@
+.pickItem {
+  display: flex;
+  flex-direction: row;
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield !important;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 85%;
+  input,
+  select {
+    max-width: 50px !important;
+    text-align: center;
+  }
+  p {
+    margin-left: 15px !important;
+    margin-right: 5px !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    :last-child {
+      margin-bottom: 0px !important;
+    }
+    .pickItem {
+      margin-bottom: 15px;
+    }
+  }
+}
